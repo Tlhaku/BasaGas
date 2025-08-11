@@ -1,0 +1,16 @@
+{
+  "name": "basagastemplate",
+  "version": "0.1.0",
+  "description": "Template codebase for Basa Gas website and web app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo 'No tests yet'"
+  },
+  "keywords": ["LPG", "delivery", "BasaGas"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
