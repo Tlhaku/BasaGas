@@ -3,20 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basa Gas Web App</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>BasaGas Web App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
-<body>
-  <h1>Order LPG Refill</h1>
-  <form id="orderForm">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required />
-    <label for="cylinder">Cylinder Size (kg):</label>
-    <input type="number" id="cylinder" name="cylinder" required min="2" max="7" />
-    <button type="submit">Place Order</button>
-  </form>
-  <p id="response"></p>
-
-  <script src="app.js"></script>
+<body class="bg-gray-100 text-gray-800">
+  <div id="root" class="max-w-xl mx-auto p-4"></div>
+  <script type="text/babel" src="app.js"></script>
 </body>
 </html>
