@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basa Gas</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 2rem; }
-    header { margin-bottom: 2rem; }
-  </style>
+  <title>BasaGas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>Basa Gas</h1>
-    <p>Last-mile LPG delivery for South Africa.</p>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-gradient-to-r from-purple-700 to-orange-500 text-white p-6">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-3xl font-bold">BasaGas</h1>
+      <p class="mt-2">Reliable LPG refill and delivery for 2kg–7kg cylinders.</p>
+    </div>
   </header>
-  <section>
-    <p>Basa Gas specializes in the underserved 2kg–7kg gas cylinder market in residential estates and urban environments. We simplify LPG refills through on-demand collection, refill, and return, leveraging online technology to streamline service and pricing.</p>
-    <p><a href="/app">Order now via the web app</a></p>
-  </section>
+  <main class="max-w-4xl mx-auto p-6">
+    <img class="w-full rounded shadow mb-6" src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1350&q=80" alt="Gas cylinders" />
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold text-purple-700 mb-2">Convenient Refills</h2>
+      <p>Order online and have your LPG cylinders collected, refilled, and delivered back to your doorstep.</p>
+    </section>
+    <a href="/app" class="inline-block bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded">Order Now</a>
+  </main>
 </body>
 </html>
