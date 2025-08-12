@@ -61,6 +61,29 @@ app.post('/api/orders', [
   }
 });
 
+app.get('/api/orders', async (req, res) => {
+  try {
+    const orders = await Order.find().sort({ createdAt: -1 });
+    return res.json(orders);
+  } catch (err) {
+    logger.error(err);
+    return res.status(500).json({ error: 'Server error' });
+  }
+});
+
+app.get('/api/orders/:id', async (req, res) => {
+  try {
+    const order = await Order.findById(req.params.id);
+    if (!order) {
+      return res.status(404).json({ error: 'Order not found' });
+    }
+    return res.json(order);
+  } catch (err) {
+    logger.error(err);
+    return res.status(500).json({ error: 'Server error' });
+  }
+});
+
 const PORT = process.env.PORT || 3000;
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/basagas';
 
