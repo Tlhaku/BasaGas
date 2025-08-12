@@ -18,9 +18,11 @@ npm start
 
 - Visit `http://localhost:3000` for the marketing website.
 - Visit `http://localhost:3000/app` for the web app where you can place a mock order.
+- A simple REST API is available at `http://localhost:3000/api/orders` to create and
+  view orders.
 
 ## Testing
-No automated tests are included yet:
+Run the Jest test suite:
 ```bash
 npm test
 ```
