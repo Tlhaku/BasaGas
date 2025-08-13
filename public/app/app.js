@@ -54,6 +54,11 @@ function OrderForm() {
 
   return (
     <div className="bg-white shadow-md rounded p-6">
+      <img
+        className="w-full rounded mb-4"
+        src="https://images.unsplash.com/photo-1603191202653-1d51debdd77b?auto=format&fit=crop&w=1350&q=80"
+        alt="Gas delivery"
+      />
       <h1 className="text-2xl font-bold mb-4 text-purple-700">Order LPG Refill</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input className="w-full p-2 border rounded" name="name" placeholder="Name" value={form.name} onChange={handleChange} required />
